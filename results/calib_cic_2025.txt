@@ -1,0 +1,10 @@
+cic2025 seed42
+KS 0.014640
+median_ratio 1.046057
+cal_p99 0.019534
+test_p99 0.020553
+source_fpr 0.011280
+source_recall 0.498194
+target_fpr 0.009976
+target_fpr_std 0.001286
+target_recall 0.465117

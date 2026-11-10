@@ -1,0 +1,32 @@
+[
+  {
+    "dataset": "ton",
+    "model": "DeepSVDD_nobias",
+    "seed": 42,
+    "d_lat": 16,
+    "dev_tpr1": 0.520746,
+    "dev_auroc": 0.853519,
+    "eval_tpr1": 0.460717,
+    "eval_auroc": 0.86547
+  },
+  {
+    "dataset": "ton",
+    "model": "DeepSVDD_nobias",
+    "seed": 43,
+    "d_lat": 16,
+    "dev_tpr1": 0.49474,
+    "dev_auroc": 0.867489,
+    "eval_tpr1": 0.443025,
+    "eval_auroc": 0.877646
+  },
+  {
+    "dataset": "ton",
+    "model": "DeepSVDD_nobias",
+    "seed": 44,
+    "d_lat": 32,
+    "dev_tpr1": 0.521315,
+    "dev_auroc": 0.879245,
+    "eval_tpr1": 0.483921,
+    "eval_auroc": 0.883569
+  }
+]

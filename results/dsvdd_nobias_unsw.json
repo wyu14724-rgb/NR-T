@@ -1,0 +1,11 @@
+[
+  {
+    "dataset": "unsw",
+    "model": "DeepSVDD_nobias",
+    "d_lat": 32,
+    "dev_tpr1": 0.525098,
+    "dev_auroc": 0.831677,
+    "eval_tpr1": 0.520489,
+    "eval_auroc": 0.838833
+  }
+]

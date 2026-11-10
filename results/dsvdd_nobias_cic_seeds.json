@@ -1,0 +1,32 @@
+[
+  {
+    "dataset": "cic",
+    "model": "DeepSVDD_nobias",
+    "seed": 42,
+    "d_lat": 32,
+    "dev_tpr1": 0.306019,
+    "dev_auroc": 0.910322,
+    "eval_tpr1": 0.300961,
+    "eval_auroc": 0.910867
+  },
+  {
+    "dataset": "cic",
+    "model": "DeepSVDD_nobias",
+    "seed": 43,
+    "d_lat": 16,
+    "dev_tpr1": 0.287425,
+    "dev_auroc": 0.825089,
+    "eval_tpr1": 0.297034,
+    "eval_auroc": 0.828698
+  },
+  {
+    "dataset": "cic",
+    "model": "DeepSVDD_nobias",
+    "seed": 44,
+    "d_lat": 16,
+    "dev_tpr1": 0.260469,
+    "dev_auroc": 0.877286,
+    "eval_tpr1": 0.259512,
+    "eval_auroc": 0.876993
+  }
+]

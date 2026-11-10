@@ -1,0 +1,7 @@
+dataset,model,macro_tpr1,macro_auroc,n_test
+ton,RF_sup,0.9581,0.9977,9993
+ton,HGB_sup,0.9022,0.9960,9993
+unsw,RF_sup,0.9414,0.9966,41166
+unsw,HGB_sup,0.9551,0.9970,41166
+cic,RF_sup,0.9983,0.9999,58888
+cic,HGB_sup,1.0000,1.0000,58888

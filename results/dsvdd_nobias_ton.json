@@ -1,0 +1,11 @@
+[
+  {
+    "dataset": "ton",
+    "model": "DeepSVDD_nobias",
+    "d_lat": 16,
+    "dev_tpr1": 0.520746,
+    "dev_auroc": 0.853519,
+    "eval_tpr1": 0.460717,
+    "eval_auroc": 0.86547
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "dataset": "cic",
+    "model": "IF",
+    "config": "n_estimators=200",
+    "dev_tpr1": 0.070261,
+    "dev_auroc": 0.817866,
+    "eval_tpr1": 0.071805,
+    "eval_auroc": 0.820683
+  },
+  {
+    "dataset": "cic",
+    "model": "OCSVM",
+    "config": "nu=0.01, gamma=scale, fit_n=8000",
+    "dev_tpr1": 0.145097,
+    "dev_auroc": 0.719936,
+    "eval_tpr1": 0.146262,
+    "eval_auroc": 0.718075
+  },
+  {
+    "dataset": "cic",
+    "model": "DeepSVDD",
+    "config": "d_lat=32, epochs=30",
+    "dev_tpr1": 0.233045,
+    "dev_auroc": 0.904919,
+    "eval_tpr1": 0.229839,
+    "eval_auroc": 0.905469
+  }
+]

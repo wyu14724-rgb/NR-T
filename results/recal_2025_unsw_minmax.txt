@@ -1,0 +1,7 @@
+KS 0.088936
+source_fpr 0.047784
+target_fpr 0.010530
+target_fpr_std 0.001174
+target_recall 0.495298
+median_ratio 1.068892
+p99_ratio 4.395954

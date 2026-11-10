@@ -1,0 +1,4 @@
+dataset,model,seed,d_lat,dev_tpr1,dev_auroc,eval_tpr1,eval_auroc
+unsw,DeepSVDD_nobias,42,32,0.525098,0.831677,0.520489,0.838833
+unsw,DeepSVDD_nobias,43,16,0.533353,0.848228,0.544308,0.851273
+unsw,DeepSVDD_nobias,44,32,0.534957,0.811311,0.536108,0.820278

@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "ton",
+    "seed": 42,
+    "tpr1": 0.480861,
+    "auroc": 0.97019,
+    "aupr": 0.826143,
+    "n_test": 9993
+  },
+  {
+    "dataset": "ton",
+    "seed": 43,
+    "tpr1": 0.484596,
+    "auroc": 0.974014,
+    "aupr": 0.837845,
+    "n_test": 9993
+  },
+  {
+    "dataset": "ton",
+    "seed": 44,
+    "tpr1": 0.489253,
+    "auroc": 0.967042,
+    "aupr": 0.806918,
+    "n_test": 9993
+  },
+  {
+    "dataset": "unsw",
+    "seed": 42,
+    "tpr1": 0.490226,
+    "auroc": 0.836086,
+    "aupr": 0.445792,
+    "n_test": 41166
+  },
+  {
+    "dataset": "unsw",
+    "seed": 43,
+    "tpr1": 0.475991,
+    "auroc": 0.822464,
+    "aupr": 0.42028,
+    "n_test": 41166
+  },
+  {
+    "dataset": "unsw",
+    "seed": 44,
+    "tpr1": 0.467517,
+    "auroc": 0.836549,
+    "aupr": 0.422978,
+    "n_test": 41166
+  },
+  {
+    "dataset": "cic",
+    "seed": 42,
+    "tpr1": 0.398091,
+    "auroc": 0.870503,
+    "aupr": 0.485928,
+    "n_test": 58888
+  },
+  {
+    "dataset": "cic",
+    "seed": 43,
+    "tpr1": 0.412242,
+    "auroc": 0.866353,
+    "aupr": 0.486106,
+    "n_test": 58888
+  },
+  {
+    "dataset": "cic",
+    "seed": 44,
+    "tpr1": 0.362699,
+    "auroc": 0.872751,
+    "aupr": 0.487677,
+    "n_test": 58888
+  }
+]

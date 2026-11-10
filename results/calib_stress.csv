@@ -1,0 +1,82 @@
+dataset,arm,scenario,rate,note,recall,fpr,recall_sd,fpr_sd
+ton,native,honest,0.0,disjoint calibration batch,0.40584514310193875,0.0104,,
+ton,native,leak,0.5,threshold-on-eval-normals,0.40584514310193875,0.0092,,
+ton,native,leak,1.0,threshold-on-eval-normals,0.40584514310193875,0.0096,,
+ton,native,contam_control,0.01,"paired clean control, same remaining attacks",0.40589321777657333,0.010399999999999998,0.00032771126707559087,1.734723475976807e-18
+ton,native,contamination,0.01,"disjoint attack scores mixed in, excluded from numerator and denominator",0.4021595303625721,0.00692,0.0003420249665431829,0.00028565713714171403
+ton,native,contam_control,0.05,"paired clean control, same remaining attacks",0.4059849185127506,0.010399999999999998,0.0006856461045705759,1.734723475976807e-18
+ton,native,contamination,0.05,"disjoint attack scores mixed in, excluded from numerator and denominator",0.17641722561056947,0.0024,0.033719979836758535,0.0
+ton,native,contam_control,0.1,"paired clean control, same remaining attacks",0.40595627378776566,0.010399999999999998,0.0006879799585571681,1.734723475976807e-18
+ton,native,contamination,0.1,"disjoint attack scores mixed in, excluded from numerator and denominator",0.08958824534579898,0.0024,0.009676088558404867,0.0
+ton,raw1nn,honest,0.0,disjoint calibration batch,0.5051926487225273,0.0124,,
+ton,raw1nn,leak,0.5,threshold-on-eval-normals,0.4816896952098115,0.0096,,
+ton,raw1nn,leak,1.0,threshold-on-eval-normals,0.4816896952098115,0.0096,,
+ton,raw1nn,contam_control,0.01,"paired clean control, same remaining attacks",0.5053185809654764,0.012399999999999998,0.00026200847026923755,1.734723475976807e-18
+ton,raw1nn,contamination,0.01,"disjoint attack scores mixed in, excluded from numerator and denominator",0.47155103292820594,0.00564,0.013245293874129297,0.0007889233169326409
+ton,raw1nn,contam_control,0.05,"paired clean control, same remaining attacks",0.5052761519413063,0.012399999999999998,0.0011493290634507953,1.734723475976807e-18
+ton,raw1nn,contamination,0.05,"disjoint attack scores mixed in, excluded from numerator and denominator",0.11621198093051241,0.003920000000000001,0.012885287799317552,0.00016000000000000004
+ton,raw1nn,contam_control,0.1,"paired clean control, same remaining attacks",0.5053480705000017,0.012399999999999998,0.0018552311360546627,1.734723475976807e-18
+ton,raw1nn,contamination,0.1,"disjoint attack scores mixed in, excluded from numerator and denominator",0.063791678387416,0.0025399999999999993,0.011204909326049296,0.00026153393661244043
+ton,lat1nn,honest,0.0,disjoint calibration batch,0.4987045008183182,0.0116,,
+ton,lat1nn,leak,0.5,threshold-on-eval-normals,0.4806309262834463,0.0088,,
+ton,lat1nn,leak,1.0,threshold-on-eval-normals,0.48074192639444635,0.0096,,
+ton,lat1nn,contam_control,0.01,"paired clean control, same remaining attacks",0.49880312159911994,0.0116,0.0002489590148967975,0.0
+ton,lat1nn,contamination,0.01,"disjoint attack scores mixed in, excluded from numerator and denominator",0.47526688705345455,0.00582,0.0005134143291536968,0.0009335952013587045
+ton,lat1nn,contam_control,0.05,"paired clean control, same remaining attacks",0.49887293068504607,0.0116,0.0009469214624232415,0.0
+ton,lat1nn,contamination,0.05,"disjoint attack scores mixed in, excluded from numerator and denominator",0.162031413865681,0.0008,0.0005604957328975401,0.0
+ton,lat1nn,contam_control,0.1,"paired clean control, same remaining attacks",0.4988529225616773,0.0116,0.0014751732262713129,0.0
+ton,lat1nn,contamination,0.1,"disjoint attack scores mixed in, excluded from numerator and denominator",0.06709941759093584,0.0008,0.019049181629132425,0.0
+unsw,native,honest,0.0,disjoint calibration batch,0.5691689628853862,0.15908108108108107,,
+unsw,native,leak,0.5,threshold-on-eval-normals,0.46309966684866904,0.011567567567567568,,
+unsw,native,leak,1.0,threshold-on-eval-normals,0.46309966684866904,0.009945945945945946,,
+unsw,native,contam_control,0.01,"paired clean control, same remaining attacks",0.5691527413797729,0.15908108108108104,5.0225307958096206e-05,2.7755575615628914e-17
+unsw,native,contamination,0.01,"disjoint attack scores mixed in, excluded from numerator and denominator",0.47563616442366446,0.07138108108108107,0.004456083943788718,0.0051933956768142825
+unsw,native,contam_control,0.05,"paired clean control, same remaining attacks",0.5690554049656088,0.15908108108108104,0.0002017925792527357,2.7755575615628914e-17
+unsw,native,contamination,0.05,"disjoint attack scores mixed in, excluded from numerator and denominator",0.30235190701479164,0.0001108108108108108,0.032799754762446585,1.1780807955515332e-05
+unsw,native,contam_control,0.1,"paired clean control, same remaining attacks",0.5692443665439231,0.15908108108108104,0.000535353145883311,2.7755575615628914e-17
+unsw,native,contamination,0.1,"disjoint attack scores mixed in, excluded from numerator and denominator",0.18187393817573455,0.00010810810810810811,0.022473783499123996,0.0
+unsw,raw1nn,honest,0.0,disjoint calibration batch,0.5652565127377693,0.05021621621621622,,
+unsw,raw1nn,leak,0.5,threshold-on-eval-normals,0.5085672885473206,0.010864864864864866,,
+unsw,raw1nn,leak,1.0,threshold-on-eval-normals,0.5053290535070931,0.009945945945945946,,
+unsw,raw1nn,contam_control,0.01,"paired clean control, same remaining attacks",0.565245977429661,0.05021621621621621,5.5368386594203464e-05,6.938893903907228e-18
+unsw,raw1nn,contamination,0.01,"disjoint attack scores mixed in, excluded from numerator and denominator",0.536998794634609,0.02943243243243243,0.010420951281297046,0.006091786372860091
+unsw,raw1nn,contam_control,0.05,"paired clean control, same remaining attacks",0.5651415063677185,0.05021621621621621,0.00016119776225232785,6.938893903907228e-18
+unsw,raw1nn,contamination,0.05,"disjoint attack scores mixed in, excluded from numerator and denominator",0.06016332579562006,0.0010378378378378377,0.015808921820107555,0.0005608612806987105
+unsw,raw1nn,contam_control,0.1,"paired clean control, same remaining attacks",0.5652529915986737,0.05021621621621621,0.00037020575529326594,6.938893903907228e-18
+unsw,raw1nn,contamination,0.1,"disjoint attack scores mixed in, excluded from numerator and denominator",0.03042613782286715,0.0001891891891891892,0.005090065551069935,6.729675458372287e-05
+unsw,lat1nn,honest,0.0,disjoint calibration batch,0.5649970062948992,0.047783783783783784,,
+unsw,lat1nn,leak,0.5,threshold-on-eval-normals,0.4962206994767753,0.010486486486486486,,
+unsw,lat1nn,leak,1.0,threshold-on-eval-normals,0.49492692488477363,0.009945945945945946,,
+unsw,lat1nn,contam_control,0.01,"paired clean control, same remaining attacks",0.5649845252228102,0.047783783783783784,5.793507664356122e-05,0.0
+unsw,lat1nn,contamination,0.01,"disjoint attack scores mixed in, excluded from numerator and denominator",0.5244948277615746,0.019205405405405405,0.011061441406376674,0.0038373086806880487
+unsw,lat1nn,contam_control,0.05,"paired clean control, same remaining attacks",0.5648899401635326,0.047783783783783784,0.00016833169051861608,0.0
+unsw,lat1nn,contamination,0.05,"disjoint attack scores mixed in, excluded from numerator and denominator",0.2967092262503201,0.0001108108108108108,0.03346046203371063,1.1780807955515332e-05
+unsw,lat1nn,contam_control,0.1,"paired clean control, same remaining attacks",0.5649728758190956,0.047783783783783784,0.0004135019321945271,0.0
+unsw,lat1nn,contamination,0.1,"disjoint attack scores mixed in, excluded from numerator and denominator",0.1773471838583842,0.0001,0.019382713955813452,1.9301157914980677e-05
+cic,native,honest,0.0,disjoint calibration batch,0.1096671846189852,0.01056,,
+cic,native,leak,0.5,threshold-on-eval-normals,0.10948536643716703,0.01008,,
+cic,native,leak,1.0,threshold-on-eval-normals,0.10948536643716703,0.00996,,
+cic,native,contam_control,0.01,"paired clean control, same remaining attacks",0.1096840633200867,0.010560000000000003,0.00012028961759618632,3.469446951953614e-18
+cic,native,contamination,0.01,"disjoint attack scores mixed in, excluded from numerator and denominator",0.10906703858226523,0.008468,0.001861685761314244,0.000768697599840145
+cic,native,contam_control,0.05,"paired clean control, same remaining attacks",0.10965117998290567,0.010560000000000003,0.0002961170258042151,3.469446951953614e-18
+cic,native,contamination,0.05,"disjoint attack scores mixed in, excluded from numerator and denominator",0.06890528012476287,0.0008020000000000001,0.0068805304778610755,3.8935844667863566e-05
+cic,native,contam_control,0.1,"paired clean control, same remaining attacks",0.10954849316716904,0.010560000000000003,0.0003551186928103756,3.469446951953614e-18
+cic,native,contamination,0.1,"disjoint attack scores mixed in, excluded from numerator and denominator",0.032985459392223075,0.0006860000000000001,0.0032162853763142984,1.4282856857085698e-05
+cic,raw1nn,honest,0.0,disjoint calibration batch,0.500735998699095,0.01168,,
+cic,raw1nn,leak,0.5,threshold-on-eval-normals,0.4776376573373436,0.0104,,
+cic,raw1nn,leak,1.0,threshold-on-eval-normals,0.4634728634468572,0.00996,,
+cic,raw1nn,contam_control,0.01,"paired clean control, same remaining attacks",0.5008417040279383,0.01168,0.00018786265895654855,0.0
+cic,raw1nn,contamination,0.01,"disjoint attack scores mixed in, excluded from numerator and denominator",0.3449712728865634,0.00594,0.013879082673805748,0.0001242577965360726
+cic,raw1nn,contam_control,0.05,"paired clean control, same remaining attacks",0.5008476206940494,0.01168,0.000592221179326145,0.0
+cic,raw1nn,contamination,0.05,"disjoint attack scores mixed in, excluded from numerator and denominator",0.08890852597096319,0.00023600000000000002,0.013106756199143827,6.56048778674269e-05
+cic,raw1nn,contam_control,0.1,"paired clean control, same remaining attacks",0.5007777625565465,0.01168,0.0009057808371637565,0.0
+cic,raw1nn,contamination,0.1,"disjoint attack scores mixed in, excluded from numerator and denominator",0.041849997684904376,1.6000000000000003e-05,0.0034600968028559594,1.9595917942265427e-05
+cic,lat1nn,honest,0.0,disjoint calibration batch,0.4981942840857772,0.01128,,
+cic,lat1nn,leak,0.5,threshold-on-eval-normals,0.47888263696216793,0.0102,,
+cic,lat1nn,leak,1.0,threshold-on-eval-normals,0.4629392469276802,0.00996,,
+cic,lat1nn,contam_control,0.01,"paired clean control, same remaining attacks",0.4983108046577859,0.011280000000000002,0.00023521112831750244,1.734723475976807e-18
+cic,lat1nn,contamination,0.01,"disjoint attack scores mixed in, excluded from numerator and denominator",0.29678571957450206,0.0054,0.011074485552591305,0.00040338567153531875
+cic,lat1nn,contam_control,0.05,"paired clean control, same remaining attacks",0.49827440018136937,0.011280000000000002,0.0005083544665085881,1.734723475976807e-18
+cic,lat1nn,contamination,0.05,"disjoint attack scores mixed in, excluded from numerator and denominator",0.17023693668162737,0.0026140000000000004,0.004539444200758669,0.00011119352499134111
+cic,lat1nn,contam_control,0.1,"paired clean control, same remaining attacks",0.4981458613038597,0.011280000000000002,0.000829383700464989,1.734723475976807e-18
+cic,lat1nn,contamination,0.1,"disjoint attack scores mixed in, excluded from numerator and denominator",0.12686340786058395,0.0010720000000000003,0.01875832302625634,0.00027410946718418904

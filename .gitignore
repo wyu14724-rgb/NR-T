@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# latent-code caches are distributed separately (cache/README.md)
+cache/*.npz
+
+# raw datasets and checkpoints are never committed
+data/raw/
+checkpoints/*.pt
+checkpoints/*.pth
+checkpoints/*.ckpt
+
+# figures are regenerated from results/
+figures/*.png
+figures/*.pdf

@@ -1,0 +1,16 @@
+ToN-IoT target-domain recalibration recheck (2026-11-07)
+Script: code/recal_fix.py  (cached seed-42 latents, cache/ton_s42.npz)
+Rule: 99th percentile of one half of the test-split normal samples; FPR and macro
+recall measured on the other half; 20 disjoint random half-splits.
+
+ton: val-cal FPR=1.160% recall=0.4987 | target-cal FPR=0.992%+-0.232% recall=0.4822
+
+Matches the value reported in the paper (0.99% +- 0.23%, recall 0.482).
+
+Note: the unsw/cic lines printed by the same script use the older cached latents
+and are superseded by results/paired_2025_unsw_minmax.csv (UNSW, corrected MinMax
+inputs) and results/calib_cic_2025.txt (CIC, 2025 checkpoint). Only the ton line
+is authoritative here.
+
+unsw (superseded): val-cal FPR=5.286% recall=0.5610 | target-cal FPR=1.015%+-0.164% recall=0.4722
+cic  (superseded): val-cal FPR=0.984% recall=0.3914 | target-cal FPR=1.024%+-0.153% recall=0.3989

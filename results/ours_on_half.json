@@ -1,0 +1,23 @@
+{
+  "ton": {
+    "macro_tpr_0_1": 0.351167,
+    "macro_tpr_1": 0.480861,
+    "macro_auroc": 0.97019,
+    "macro_aupr": 0.826143,
+    "n_test": 9993
+  },
+  "unsw": {
+    "macro_tpr_0_1": 0.007602,
+    "macro_tpr_1": 0.490226,
+    "macro_auroc": 0.836086,
+    "macro_aupr": 0.445792,
+    "n_test": 41166
+  },
+  "cic": {
+    "macro_tpr_0_1": 0.057196,
+    "macro_tpr_1": 0.398091,
+    "macro_auroc": 0.870503,
+    "macro_aupr": 0.485928,
+    "n_test": 58888
+  }
+}

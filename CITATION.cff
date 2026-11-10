@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the manuscript below."
+title: "From Subspace to Sample: Neighborhood Scoring for Low False-Positive Unsupervised Intrusion Detection"
+type: software
+authors:
+  - family-names: "Wang"
+    given-names: "Yu"
+version: "1.0.0"
+date-released: "2026-11-10"
+license: MIT
+repository-code: "https://github.com/wyu14724-rgb/NR-T"

@@ -1,0 +1,11 @@
+{
+  "days": 5,
+  "early_days_for_fit": 3,
+  "n_fit_normals": 36934,
+  "n_cal_normals": 6079,
+  "n_held_rows": 59733,
+  "n_held_normals": 19041,
+  "n_features": 71,
+  "dropped_zero_variance": 10,
+  "preprocess_fit": "first nday-2 capture days of training normals only"
+}

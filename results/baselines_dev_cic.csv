@@ -1,0 +1,4 @@
+dataset,model,config,dev_tpr1,dev_auroc,eval_tpr1,eval_auroc
+cic,IF,"n_estimators=200",0.070261,0.817866,0.071805,0.820683
+cic,OCSVM,"nu=0.01, gamma=scale, fit_n=8000",0.145097,0.719936,0.146262,0.718075
+cic,DeepSVDD,"d_lat=32, epochs=30",0.233045,0.904919,0.229839,0.905469

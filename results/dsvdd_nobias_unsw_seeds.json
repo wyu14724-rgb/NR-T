@@ -1,0 +1,32 @@
+[
+  {
+    "dataset": "unsw",
+    "model": "DeepSVDD_nobias",
+    "seed": 42,
+    "d_lat": 32,
+    "dev_tpr1": 0.525098,
+    "dev_auroc": 0.831677,
+    "eval_tpr1": 0.520489,
+    "eval_auroc": 0.838833
+  },
+  {
+    "dataset": "unsw",
+    "model": "DeepSVDD_nobias",
+    "seed": 43,
+    "d_lat": 16,
+    "dev_tpr1": 0.533353,
+    "dev_auroc": 0.848228,
+    "eval_tpr1": 0.544308,
+    "eval_auroc": 0.851273
+  },
+  {
+    "dataset": "unsw",
+    "model": "DeepSVDD_nobias",
+    "seed": 44,
+    "d_lat": 32,
+    "dev_tpr1": 0.534957,
+    "dev_auroc": 0.811311,
+    "eval_tpr1": 0.536108,
+    "eval_auroc": 0.820278
+  }
+]

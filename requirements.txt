@@ -1,0 +1,12 @@
+# Reference environment: Python 3.12.14, Windows 11, CPU only.
+# Versions are the ones recorded in the protocol_*.json files of the study.
+
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib>=3.8
+
+# Only needed to regenerate latent codes from the checkpoints (cache/README.md);
+# every script under code/tables and code/figures runs without it.
+# torch==2.5.1

@@ -1,0 +1,2 @@
+dataset,model,d_lat,dev_tpr1,dev_auroc,eval_tpr1,eval_auroc
+ton,DeepSVDD_nobias,16,0.520746,0.853519,0.460717,0.865470

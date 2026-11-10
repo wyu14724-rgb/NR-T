@@ -1,0 +1,4 @@
+dataset,fpr_mean_pct,fpr_sd_pct,recall_locked_threshold,n_rounds
+ton,0.9920,0.2324,0.4822,20
+unsw,1.0530,0.1174,0.4953,20
+cic,0.9976,0.1286,0.4651,20

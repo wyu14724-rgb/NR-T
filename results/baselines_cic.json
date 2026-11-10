@@ -1,0 +1,65 @@
+[
+  {
+    "dataset": "cic",
+    "model": "IF",
+    "macro_tpr_0_1": 0.0,
+    "macro_tpr_1": 0.071805,
+    "macro_auroc": 0.820683,
+    "macro_aupr": 0.26436,
+    "n_test": 58888
+  },
+  {
+    "dataset": "cic",
+    "model": "OCSVM",
+    "macro_tpr_0_1": 0.008555,
+    "macro_tpr_1": 0.128904,
+    "macro_auroc": 0.685883,
+    "macro_aupr": 0.274759,
+    "n_test": 58888
+  },
+  {
+    "dataset": "cic",
+    "model": "OCSVM_z",
+    "macro_tpr_0_1": 0.01295,
+    "macro_tpr_1": 0.139974,
+    "macro_auroc": 0.697298,
+    "macro_aupr": 0.274056,
+    "n_test": 58888
+  },
+  {
+    "dataset": "cic",
+    "model": "DeepSVDD",
+    "macro_tpr_0_1": 0.059301,
+    "macro_tpr_1": 0.209297,
+    "macro_auroc": 0.873487,
+    "macro_aupr": 0.402731,
+    "n_test": 58888
+  },
+  {
+    "dataset": "cic",
+    "model": "RF_sup",
+    "macro_tpr_0_1": 0.983513,
+    "macro_tpr_1": 0.998342,
+    "macro_auroc": 0.999885,
+    "macro_aupr": 0.98885,
+    "n_test": 58888
+  },
+  {
+    "dataset": "cic",
+    "model": "HGB_sup",
+    "macro_tpr_0_1": 0.994327,
+    "macro_tpr_1": 0.99999,
+    "macro_auroc": 0.999972,
+    "macro_aupr": 0.996637,
+    "n_test": 58888
+  },
+  {
+    "dataset": "cic",
+    "model": "MLP_sup",
+    "macro_tpr_0_1": 0.861071,
+    "macro_tpr_1": 0.998026,
+    "macro_auroc": 0.99952,
+    "macro_aupr": 0.932508,
+    "n_test": 58888
+  }
+]

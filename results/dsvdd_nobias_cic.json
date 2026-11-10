@@ -1,0 +1,11 @@
+[
+  {
+    "dataset": "cic",
+    "model": "DeepSVDD_nobias",
+    "d_lat": 32,
+    "dev_tpr1": 0.306019,
+    "dev_auroc": 0.910322,
+    "eval_tpr1": 0.300961,
+    "eval_auroc": 0.910867
+  }
+]
