@@ -11,6 +11,5 @@ checkpoints/*.pt
 checkpoints/*.pth
 checkpoints/*.ckpt
 
-# figures are regenerated from results/
+# figures are regenerated, but the six vector figures are shipped
 figures/*.png
-figures/*.pdf

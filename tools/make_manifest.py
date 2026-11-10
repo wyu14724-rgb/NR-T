@@ -14,7 +14,7 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SKIP_DIRS = {".git", "__pycache__", ".ipynb_checkpoints", "figures"}
+SKIP_DIRS = {".git", "__pycache__", ".ipynb_checkpoints"}
 SKIP_NAMES = {"MANIFEST.sha256"}
 
 
@@ -33,6 +33,8 @@ def walk(base: Path, skip_names=SKIP_NAMES):
         if any(part in SKIP_DIRS for part in p.parts):
             continue
         if p.name in skip_names:
+            continue
+        if p.suffix == ".png" and p.parent.name == "figures":
             continue
         yield p
 

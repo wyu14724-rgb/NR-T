@@ -5,7 +5,7 @@ them). The checkpoint is retrained on normals from the first three days only,
 the reference set and the calibration batch are also restricted to those days,
 and everything is evaluated on the last two days, which the model never saw.
 
-This is the protocol the paper lists as future work ("按采集日划分").
+This is the protocol the paper lists as future work ("split by capture day").
 Output: results/cic_day_split.csv
 """
 import sys
@@ -22,7 +22,7 @@ from paired_2025_cic import train  # noqa: E402
 from baselines import macro_metrics  # noqa: E402
 
 RES = TRAE / 'results'
-DATA = TRAE / 'CICIDS2017_20261107' / 'data' / 'cicids2017.npz'
+DATA = TRAE / 'cic' / 'data' / 'cicids2017.npz'
 NORMAL = {'normal', 'Normal', 'BENIGN'}
 NS = 1_000_000_000
 SEED = 42

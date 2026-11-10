@@ -39,14 +39,14 @@ import torch.nn.functional as F
 from sklearn.metrics import roc_auc_score, roc_curve
 from sklearn.neighbors import NearestNeighbors
 
-BASE = Path(r'D:\实验\选题候选10.27\选题2')
-TRAE = BASE / '实验产物' / 'TRAE接手'
-TON = BASE / '实验产物' / 'ToN_IoT_开发验证_20261106'
-UNSW = BASE / '实验产物' / 'DRL_UNSWNB15_20261106'
-ROOT = TRAE / '训练目标_20261107'
+BASE = STUDY
+TRAE = BASE / 'artifacts' / 'current'
+TON = BASE / 'artifacts' / 'ton'
+UNSW = BASE / 'artifacts' / 'drl_unsw'
+ROOT = TRAE / 'tail_objective'
 RES = ROOT / 'results'
-OFFICIAL = BASE / '源码' / 'DRL-7ff8fadada03564cfbc13f2ba66febc17cf4867d'
-COMPAT = BASE / '实验产物' / 'DRL_基线对照_20261106' / 'source_snapshot' / 'DRL2025_compat'
+OFFICIAL = BASE / 'source' / 'DRL-7ff8fadada03564cfbc13f2ba66febc17cf4867d'
+COMPAT = BASE / 'artifacts' / 'drl_baseline' / 'source_snapshot' / 'DRL2025_compat'
 # The two existing baselines were trained with two different, upstream-pinned variants.
 # Reproduce each dataset's own baseline rather than silently unifying them.
 VARIANTS = {'ton': {'root': COMPAT, 'module': 'DRL_Model.Model', 'cls': 'DRL', 'softmax': True,
@@ -278,7 +278,7 @@ def freeze():
            TON / 'runs' / 'DRL2025' / 'seed42' / 'scores.npz',
            UNSW / 'runs' / 'baseline_seed42' / 'results' / 'scores.npz',
            OFFICIAL / 'PrototypeNet' / 'Model.py',
-           TRAE / '密度头_20261106' / 'results' / 'density_summary.csv']
+           TRAE / 'density_head' / 'results' / 'density_summary.csv']
     proto = {
         'purpose': 'Replace nothing but the training objective: add a CVaR tail-risk term and a scale-free representation-compactness term; architecture and readout unchanged.',
         'official_source': str(OFFICIAL),

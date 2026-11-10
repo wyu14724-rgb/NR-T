@@ -25,7 +25,7 @@ TRAE = Path(__file__).resolve().parents[2]
 BASE = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(TRAE / 'code' / 'scoring'))
 sys.path.insert(0, str(TRAE / 'code' / 'prepare'))
-sys.path.insert(0, str(BASE / '实验产物' / 'DRL_基线对照_20261106' / 'source_snapshot' / 'DRL2025_compat'))
+sys.path.insert(0, str(BASE / 'artifacts' / 'drl_baseline' / 'source_snapshot' / 'DRL2025_compat'))
 import paired_2025_cic as c25  # noqa: E402
 import run_cicids as cic  # noqa: E402
 from baselines import get_data, macro_metrics  # noqa: E402
@@ -33,7 +33,7 @@ from DRL_Model.Model import DRL  # noqa: E402
 
 RES = TRAE / 'results'
 CACHE = TRAE / 'cache'
-RUNS = BASE / '实验产物' / 'DRL_基线对照_20261106' / 'runs' / 'DRL2025'
+RUNS = BASE / 'artifacts' / 'drl_baseline' / 'runs' / 'DRL2025'
 NORMAL = {'normal', 'Normal', 'BENIGN'}
 SEED = 42
 K_MODES, VAR_KEEP, MIX = 20, .95, .1

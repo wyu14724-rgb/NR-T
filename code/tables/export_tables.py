@@ -12,6 +12,7 @@ Outputs (results/):
   table4_recalibration.csv     dataset,fpr_mean_pct,fpr_sd_pct,
                                recall_locked_threshold,n_rounds
 """
+import csv
 import json
 import re
 from pathlib import Path
@@ -22,7 +23,7 @@ from scipy.stats import f as fdist
 TRAE = Path(__file__).resolve().parents[2]
 RES = TRAE / 'results'
 OUT = TRAE / 'results' / 'tables'
-MD_NBR = TRAE / 'results' / 'report_10_neighbour.md'
+NB_REPORT = TRAE / 'results' / 'report_10_neighbour.csv'
 
 DATASETS = ('ton', 'unsw', 'cic')
 NORMAL = {'normal', 'Normal', 'BENIGN'}
@@ -91,20 +92,14 @@ def task2():
 
 # ---------------------------------------------------------------- task 2 (T9)
 def task9():
-    text = MD_NBR.read_text(encoding='utf-8')
-    start = text.index('## 7. n=5')
-    block = text[start:text.index('**sd**', start)]
-    pat = re.compile(r'^\|\s*(\d{2})\s*\|\s*([0-9.]+)\s*\|\s*([0-9.]+)\s*\|\s*'
-                     r'\*{0,2}\s*([+\-\u2212]?[0-9.]+)\s*\*{0,2}\s*\|\s*([0-9.]+)\s*\|\s*$',
-                     re.M)
-    parsed = pat.findall(block)
-    assert len(parsed) == 5, f'expected 5 seed rows in {MD_NBR.name}, got {len(parsed)}'
-    seeds = [int(r[0]) for r in parsed]
+    with NB_REPORT.open(encoding='utf-8', newline='') as fh:
+        rows_in = list(csv.DictReader(fh))
+    seeds = [int(r['seed']) for r in rows_in]
     assert seeds == [42, 43, 44, 45, 46], seeds
-    base = np.array([float(r[1]) for r in parsed])
-    meth = np.array([float(r[2]) for r in parsed])
-    md_delta = np.array([float(r[3].replace('\u2212', '-')) for r in parsed])
-    assert (len(base) == len(meth) == 5)
+    base = np.array([float(r['base']) for r in rows_in])
+    meth = np.array([float(r['method']) for r in rows_in])
+    assert len(base) == len(meth) == 5
+    md_delta = (meth - base) * 100
 
     rows = [(f'{s}', f'{b:.4f}', f'{m:.4f}', f'{(m - b) * 100:.4f}')
             for s, b, m in zip(seeds, base, meth)]

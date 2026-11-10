@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-r = Path(r'D:\实验\选题候选10.27\选题2\实验产物\TRAE接手\CICIDS2017_20261107\results')
+r = STUDY / 'artifacts' / 'current' / 'cic' / 'results'
 a = json.loads((r / 'perclass_raw_s42.json').read_text())
 b = json.loads((r / 'perclass_drl_s42.json').read_text())
 print(f"{'class':26s}{'raw_k1':>8s}{'drl_k1':>8s}{'delta':>8s}{'drl_nat':>9s}{'raw_auc':>9s}{'drl_auc':>9s}{'n':>7s}")

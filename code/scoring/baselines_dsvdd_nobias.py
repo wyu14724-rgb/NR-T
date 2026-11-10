@@ -30,7 +30,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from baselines import get_data, macro_metrics  # noqa: E402
 
-SEED = 42  # 数据划分固定为 seed 42，与 NR-T 的评测半集一致；训练种子由 --seeds 指定
+SEED = 42  # split seed, identical to the split used for NR-T; training seeds come from --seeds
 
 
 class DSVDDNoBias(nn.Module):
@@ -79,7 +79,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dataset', required=True, choices=['ton', 'unsw', 'cic'])
     ap.add_argument('--seeds', default='42',
-                    help='逗号分隔的训练种子；数据划分始终固定为 seed 42')
+                    help='comma-separated training seeds; the split always uses seed 42')
     args = ap.parse_args()
     name = args.dataset
     seeds = [int(s) for s in args.seeds.split(',') if s.strip()]

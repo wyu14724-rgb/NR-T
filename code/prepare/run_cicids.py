@@ -18,8 +18,8 @@ import torch.nn.functional as F
 from sklearn.metrics import roc_auc_score, roc_curve
 from sklearn.neighbors import NearestNeighbors
 
-TRAE = Path(r'D:\实验\选题候选10.27\选题2\实验产物\TRAE接手')
-ROOT = TRAE / 'CICIDS2017_20261107'
+TRAE = STUDY / 'artifacts' / 'current'
+ROOT = TRAE / 'cic'
 DATA = ROOT / 'data' / 'cicids2017.npz'
 RES = ROOT / 'results'
 RES.mkdir(parents=True, exist_ok=True)

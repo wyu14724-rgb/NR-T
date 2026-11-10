@@ -22,15 +22,15 @@ BASE = Path(__file__).resolve().parents[3]
 for p in [TRAE / 'code' / 'training',
           TRAE / 'code' / 'prepare',
           TRAE / 'code' / 'scoring',
-          BASE / '实验产物' / 'DRL_基线对照_20261106' / 'source_snapshot' / 'DRL2025_compat']:
+          BASE / 'artifacts' / 'drl_baseline' / 'source_snapshot' / 'DRL2025_compat']:
     sys.path.insert(0, str(p))
 
 import tail_objective as base  # noqa: E402
 import run_cicids as cic  # noqa: E402
 
 RES = TRAE / 'results'
-UNSW = BASE / '实验产物' / 'DRL_UNSWNB15_20261106'
-RUNS = BASE / '实验产物' / 'DRL_基线对照_20261106' / 'runs' / 'DRL2025'
+UNSW = BASE / 'artifacts' / 'drl_unsw'
+RUNS = BASE / 'artifacts' / 'drl_baseline' / 'runs' / 'DRL2025'
 SEED = 42
 
 
@@ -87,7 +87,7 @@ def cic_():
     scores = dict(test_native=rq, cal_native=rc,
                   test_raw1nn=knn(x, d), cal_raw1nn=knn(x, c),
                   test_lat1nn=knn(ht, hq), cal_lat1nn=knn(ht, hc))
-    ts = np.load(TRAE / 'CICIDS2017_20261107' / 'data' / 'cicids2017.npz')['ts_test']
+    ts = np.load(TRAE / 'cic' / 'data' / 'cicids2017.npz')['ts_test']
     return scores, y.astype(np.int64), cats, ts
 
 

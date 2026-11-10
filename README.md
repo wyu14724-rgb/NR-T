@@ -40,16 +40,17 @@ tools/           manifest generator
 git clone https://github.com/wyu14724-rgb/NR-T.git
 cd NR-T
 python -m pip install -r requirements.txt
-# rebuild the four table files and the five-seed statistics
-python code/tables/export_tables.py
 
-# redraw all six figures into figures/
-python code/figures/paper_figs.py
+python reproduce.py          # rebuild the four table files and the six figures
 ```
 
-`export_tables.py` reads only files under `results/`; two consecutive runs
-produce byte-identical output. `verify_cic_scores.py` additionally needs the
+`reproduce.py` runs `code/tables/export_tables.py` and `code/figures/paper_figs.py`.
+The former reads only files under `results/`, and two consecutive runs produce
+byte-identical output. `code/tables/verify_cic_scores.py` additionally needs the
 latent-code caches (`cache/README.md`).
+
+The six figures are shipped as vector PDFs in `figures/`, and `results/MAPPING.md`
+maps every manuscript table to the file that backs it.
 
 ## Results files
 

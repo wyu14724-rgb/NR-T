@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pandas as pd
 
-ROOT = Path(r'D:\实验\选题候选10.27\选题2\实验产物\TRAE接手\训练目标_20261107')
+ROOT = STUDY / 'artifacts' / 'current' / 'tail_objective'
 RES = ROOT / 'results'
 REF = {'ton': 0.4824414551790954, 'unsw': 0.482809164081768}
 

@@ -15,12 +15,12 @@ from sklearn.neighbors import NearestNeighbors
 TRAE = Path(__file__).resolve().parents[2]
 BASE = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(TRAE / 'code' / 'scoring'))
-sys.path.insert(0, str(BASE / '实验产物' / 'DRL_基线对照_20261106' / 'source_snapshot' / 'DRL2025_compat'))
+sys.path.insert(0, str(BASE / 'artifacts' / 'drl_baseline' / 'source_snapshot' / 'DRL2025_compat'))
 from baselines import macro_metrics  # noqa: E402
 from DRL_Model.Model import DRL  # noqa: E402
 
-UNSW = BASE / '实验产物' / 'DRL_UNSWNB15_20261106'
-RUNS = BASE / '实验产物' / 'DRL_基线对照_20261106' / 'runs' / 'DRL2025'
+UNSW = BASE / 'artifacts' / 'drl_unsw'
+RUNS = BASE / 'artifacts' / 'drl_baseline' / 'runs' / 'DRL2025'
 RES = TRAE / 'results'
 NORMAL = {'normal', 'Normal', 'BENIGN'}
 

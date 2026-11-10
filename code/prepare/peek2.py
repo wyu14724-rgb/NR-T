@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-p = Path(r'D:\实验\选题候选10.27\选题2\实验产物\TRAE接手\CICIDS2017_20261107\raw\CICIDS_Flow.parquet')
+p = STUDY / 'artifacts' / 'current' / 'cic' / 'raw' / 'CICIDS_Flow.parquet'
 df = pd.read_parquet(p, columns=['Timestamp', 'attack_label', 'Flow Duration', 'Total Fwd Packets'])
 print('rows', len(df))
 print('\n=== label counts ===')

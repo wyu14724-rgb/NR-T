@@ -1,21 +1,25 @@
-# results 目录口径说明
+# Results
 
-本目录混有不同时期的产物。**现行口径以 `scores_*_s42.npz` 为准**（一次性落盘的测试样本三分值 + 标签 + 类别名），
-论文 §5.3 及配图 F2/F3/F6 均从该 npz 现算。以下几项已作废，仅留作早期对照。
+Every file here is produced by a script under `code/`, or is an input that the
+table-rebuild script reads.
 
-## 已作废 / 仅部分有效
+| File | Produced by | Consumed by |
+| --- | --- | --- |
+| `table2_supervised.csv` | `code/tables/export_tables.py` | manuscript Table 6 |
+| `table4_recalibration.csv` | `code/tables/export_tables.py` | manuscript Table 4 |
+| `table9_contrastive_5seed.csv` | `code/tables/export_tables.py` | §5.5 five-seed statistics |
+| `table14_alpha_sweep.csv` | `code/tables/export_tables.py` | manuscript Table 16 |
+| `report_10_neighbour.csv` | five-seed run log, transcribed | `export_tables.py` (input) |
+| `paired_2025_unsw_minmax.csv` | `code/scoring/paired_2025.py` | manuscript Table 5 |
+| `refsize_{ton,unsw,cic}.csv` | `code/scoring/refsize_ablation.py` | manuscript Tables 12–13 |
+| `calib_stress.csv` | `code/scoring/calib_stress.py` | calibration stress test |
+| `oracle_contam.csv` | `code/scoring/calib_stress.py` | closed-form contamination check |
+| `dup_audit.csv` | `code/scoring/dup_audit.py` | duplicate audit of §5.9 |
+| `indep_splits.csv` | `code/scoring/indep_splits.py` | independent re-partition check |
+| `bootstrap_ci.csv` | `code/scoring/bootstrap_ci.py` | stratified bootstrap intervals |
+| `baselines_{ton,unsw,cic}.json` | `code/scoring/baselines.py` | `export_tables.py` (input) |
+| `protocol_{ton,unsw,cic}.json` | run configuration | seeds, splits and environment |
+| `scores_{ton,unsw,cic}_s42.npz` | `code/scoring/dump_scores.py` | every statistic above |
+| `tables/` | `export_tables.py` (output copy) | byte-identical reruns |
 
-| 文件 | 状态 | 现行替代 |
-|---|---|---|
-| `paired_three_arms.csv` | 仅 `dataset == 'ton'` 的 9 行有效；`unsw` / `cic` 各 9 行为旧预处理（如 unsw native 0.102，现行 0.463） | `paired_2025_unsw_minmax.csv`、`paired_2025_cic.csv` |
-| `perclass_*.json`（24 个） | 整套为旧口径（perclass_ton_NR 的 ddos 为 0.298，现行 0.49 级）；OCSVM/DeepSVDD/NR 三臂尤甚 | 由 `scores_*_s42.npz` 现算（见 `code/paper_figs.py` 的 `per_class_tpr`） |
-| `calib_diag.json` 的 UNSW 条目 | 旧预处理 | `recal_2025_unsw_minmax.txt`（论文附录已注明） |
-
-## 版本变更
-
-- `oracle_contam.csv`（2026-11-09）：追加 `micro_recall`、`identity_fpr`、`diff_pp` 三列，用于逐格核对论文 §5.4 的解析式误差。
-  原有 7 列数值不变（脚本种子固定，重跑逐位一致）。`diff_pp` 仅对 `scenario == 'oracle_clip'` 有意义。
-
-## 注意
-
-`paired_three_arms.csv` 若整表复算，会得到 unsw +38.8pp 这类错误结论。取数前先按 `dataset` 过滤。
+See `MAPPING.md` for the manuscript table numbering.

@@ -20,7 +20,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import NearestNeighbors
 
 TRAE = Path(__file__).resolve().parents[2]
-ROOT = TRAE / 'CICIDS2017_20261107'
+ROOT = TRAE / 'cic'
 sys.path.insert(0, str(ROOT / 'code'))
 sys.path.insert(0, str(TRAE / 'code' / 'scoring'))
 from paired_2025_cic import train  # noqa: E402

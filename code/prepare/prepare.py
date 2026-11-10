@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-ROOT = Path(r'D:\实验\选题候选10.27\选题2\实验产物\TRAE接手\CICIDS2017_20261107')
+ROOT = STUDY / 'artifacts' / 'current' / 'cic'
 RAW = ROOT / 'raw' / 'CICIDS_Flow.parquet'
 DATA = ROOT / 'data'
 DATA.mkdir(parents=True, exist_ok=True)
