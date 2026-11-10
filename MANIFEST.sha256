@@ -5,9 +5,6 @@ fbc93c0dc04fbb96        1558  2026-11-10 19:43:30  cache/README.md
 73240bf12c72f1e5         504  2026-11-10 19:42:47  checkpoints/SHA256SUMS
 01c57678eaf53893         399  2026-11-10 19:42:48  CITATION.cff
 09e23929c4fe2244       26403  2026-11-10 19:34:01  code/figures/paper_figs.py
-67bfc51e57f1cb3c         618  2026-11-10 19:56:57  code/prepare/cmp.py
-9ad268a095acada5         535  2026-11-10 19:56:57  code/prepare/peek.py
-7e7bf1ce093a65f9         656  2026-11-10 19:56:57  code/prepare/peek2.py
 13e017b7b0a42fd9        5676  2026-11-10 19:56:41  code/prepare/prepare.py
 c27d44ff009c7d60        8085  2026-11-10 19:56:41  code/prepare/run_cicids.py
 e3b3b24fbcd596d0        2770  2026-11-10 19:58:22  code/README.md
